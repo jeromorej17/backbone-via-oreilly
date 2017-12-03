@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <title>Javascript Fundamentals</title>
+    </head>
+    <body>
+        <div id="todo"></div>
+        <script type="text/template" id="item-template">
+            <div>
+                <input id="todo_complete" type="checkbox" <%= commpleted ? 'checked="checked"' : '' %>>
+                <%= title %>
+            </div>
+        </script>
+        <script type="text/javascript" src="js/external/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="js/external/underscore-1.8.3.min.js"></script>
+        <script type="text/javascript" src="js/external/backbone.js"></script>
+        <script src="js/model/todo.model.js"></script>
+        <script src="js/views/todo.view.js"></script>
+    </body>
+</html>

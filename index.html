@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <title>Javascript Fundamentals</title>
+    </head>
+    <body>
+       <div id="myLibraryViewSection"></div>    
+       <script type="text/x-handlebars-template" id="library-template">
+            <ul>
+                {{#each library}}
+                <li>
+                    <em>{{name}}</em> by {{author}}
+                </li>
+                {{/each}}
+            </ul>
+       </script>
+        <script type="text/javascript" src="js/external/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="js/external/underscore-1.8.3.min.js"></script>
+        <script type="text/javascript" src="js/external/backbone.js"></script>
+        <script type="text/javascript" src="js/external/handlebars-v4.0.11.js"></script>
+        <script type="text/javascript" src="js/external/mustache.min.js"></script>        
+        <script type="text/javascript" src="js/models/book.model.js"></script>
+        <script type="text/javascript" src="js/views/library.view.js"></script>
+        <script type="text/javascript" src="js/routers/myrouter.route.js"></script> 
+    </body>
+</html>
